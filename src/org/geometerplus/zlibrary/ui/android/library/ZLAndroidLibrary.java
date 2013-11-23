@@ -225,7 +225,7 @@ public final class ZLAndroidLibrary extends ZLibrary {
 	}
 
 	@Override
-	public int getPixelWidth() {
+	public int getWidthInPixels() {
 		if (myMetrics == null) {
 			myMetrics = FBReaderApplication.getAppContext().getResources().getDisplayMetrics();
 		}
@@ -233,7 +233,7 @@ public final class ZLAndroidLibrary extends ZLibrary {
 	}
 
 	@Override
-	public int getPixelHeight() {
+	public int getHeightInPixels() {
 		if (myMetrics == null) {
 			myMetrics = FBReaderApplication.getAppContext().getResources().getDisplayMetrics();
 		}
