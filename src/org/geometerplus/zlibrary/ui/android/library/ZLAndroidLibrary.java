@@ -30,6 +30,7 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageInfo;
 import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
 import android.os.Build;
 import android.telephony.TelephonyManager;
 import android.text.format.DateFormat;
@@ -165,6 +166,10 @@ public final class ZLAndroidLibrary extends ZLibrary {
 		}
 	}
 
+	public AssetManager getAssets() {
+		return myApplication.getAssets();
+	}
+		
 	@Override
 	public ZLResourceFile createResourceFile(String path) {
 		return new AndroidAssetsFile(path);
